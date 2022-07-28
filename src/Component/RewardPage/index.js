@@ -18,7 +18,7 @@ mockData().then((data) => {
         let tempobject = data
         tempobject.forEach((item)=>{
             let priceCalculation = (item.price/100)*2
-            let conditionalReward
+            let conditionalReward = 0
             if (item.price > 50) {
                 let margin = item.price - 50
                 conditionalReward = margin/50
@@ -114,7 +114,7 @@ function show(event) {
                             <td className="rewards-cell">{item.month}</td>
                             <td className="rewards-cell">{item.name}</td>
                             <td className="rewards-cell">{item.price}</td>
-                            <td className="rewards-cell">{item.rewards}</td>
+                            <td className="rewards-cell">{item.rewards.toFixed(1)}</td>
                         </tr>
                         )
                     })}
@@ -124,7 +124,7 @@ function show(event) {
                             <td className="rewards-cell">{item.month}</td>
                             <td className="rewards-cell">{item.name}</td>
                             <td className="rewards-cell">{item.price}</td>
-                            <td className="rewards-cell">{item.rewards}</td>
+                            <td className="rewards-cell">{item.rewards.toFixed(1)}</td>
                         </tr>
                         )
                     })}
@@ -134,7 +134,7 @@ function show(event) {
                             <td className="rewards-cell">{item.month}</td>
                             <td className="rewards-cell">{item.name}</td>
                             <td className="rewards-cell">{item.price}</td>
-                            <td className="rewards-cell">{item.rewards}</td>
+                            <td className="rewards-cell">{item.rewards.toFixed(1)}</td>
                         </tr>
                         )
                     })}
