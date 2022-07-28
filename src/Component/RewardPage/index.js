@@ -90,7 +90,7 @@ function show(event) {
                     id="message"
                     name="filterName"
                     onChange={handleChange}
-                    placeholder="Search by Month"
+                    placeholder="Filter Last 3 Months"
                     value={text}
                 />
                 <button type="submit" onClick={filterMonth}> Submit </button>
