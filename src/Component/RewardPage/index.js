@@ -17,8 +17,13 @@ mockData().then((data) => {
         console.log(data)
         let tempobject = data
         tempobject.forEach((item)=>{
-            
-            item.rewards = (item.price/100)*2 + (item.price/50)
+            let priceCalculation = (item.price/100)*2
+            let conditionalReward
+            if (item.price > 50) {
+                let margin = item.price - 50
+                conditionalReward = margin/50
+            }
+            item.rewards = priceCalculation + conditionalReward
             console.log(item)
         })
         console.log(tempobject)
