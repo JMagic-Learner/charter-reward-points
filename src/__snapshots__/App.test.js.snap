@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<DocumentFragment>
+  <div
+    class="rewards-homepage"
+  >
+    <p>
+       Rewards 
+    </p>
+    <input
+      id="message"
+      name="filterName"
+      type="text"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+       Submit 
+    </button>
+    <button
+      type="submit"
+    >
+       Show All 
+    </button>
+    <div
+      class="display-all-customers"
+    >
+      <table>
+        <tbody>
+          <tr
+            class="rewards-row"
+          >
+            <th
+              class="rewards-cell"
+            >
+              Month
+            </th>
+            <th
+              class="rewards-cell"
+            >
+              Customer 
+            </th>
+            <th
+              class="rewards-cell"
+            >
+              Spent 
+            </th>
+            <th
+              class="rewards-cell"
+            >
+              Rewards 
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;

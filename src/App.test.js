@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { render, fireEvent, screen } from '@testing-library/react';
+import RewardPage from "./Pages/RewardPage/index.js"
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe ( `RewardPage`, ()=> {
+  it('should match snapshot', () => {
+    })
+    const { asFragment } = render(<RewardPage > SnapShot Rewardpage </RewardPage>);
+    expect(asFragment()).toMatchSnapshot();
+})
